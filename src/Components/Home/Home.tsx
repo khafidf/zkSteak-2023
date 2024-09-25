@@ -6,7 +6,7 @@ import steakRT from "../../assets/right-top.png";
 
 const Home = () => {
 	return (
-		<div className="relative bg-black backdrop-blur-md overflow-hidden flex items-center min-h-[758px]">
+		<div className="relative bg-[url('/src/assets/bg-two.jpg')] backdrop-blur-md overflow-hidden bg-cover bg-bottom flex items-center min-h-[758px]">
 			<div className="container md:w-[782px] relative mx-auto">
 				{/* Text Content */}
 				<div className="flex flex-col items-center gap-8 px-4 text-center text-wrap">
