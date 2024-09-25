@@ -14,11 +14,11 @@ function App() {
 				<Navbar />
 			</header>
 			{/* Home */}
-			<section>
+			<section id="home">
 				<Home />
 			</section>
 			{/* About us */}
-			<section>
+			<section id="about">
 				<AboutUs />
 			</section>
 			{/* Partner */}
@@ -26,11 +26,11 @@ function App() {
 				<Partner />
 			</section>
 			{/* Utility */}
-			<section>
+			<section id="tokenomics">
 				<Utility />
 			</section>
 			{/* Roadmap */}
-			<section>
+			<section id="roadmap">
 				<Roadmap />
 			</section>
 			{/* Footer */}

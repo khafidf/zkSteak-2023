@@ -26,8 +26,8 @@ const Navbar = () => {
 	const nav = ["Home", "Steaking", "Tokenomics", "Roadmap"];
 
 	return (
-		<nav className="mx-auto relative z-10 bg-black">
-			<div className="container flex justify-evenly items-center mx-auto">
+		<nav className="relative z-10 mx-auto bg-black">
+			<div className="container flex items-center mx-auto justify-evenly">
 				<a href="#">
 					<img src={logoZksteak} width={200} alt="Logo Zksteak" />
 				</a>
@@ -39,18 +39,18 @@ const Navbar = () => {
 				>
 					{nav.map((item: string, id) => (
 						<li
-							className="cursor-pointer font-semibold text-3xl md:text-base p-4 hover:text-orange-400"
+							className="p-4 text-3xl font-semibold cursor-pointer md:text-base hover:text-orange-400"
 							key={id}
 						>
-							<a href="#">{item}</a>
+							<a href={`#${item.toLowerCase()}`}>{item}</a>
 						</li>
 					))}
-					<div className="z-10 absolute rounded-full md:hidden p-2 bottom-20 hover:text-orange-400 cursor-pointer border border-white">
+					<div className="absolute z-10 p-2 border border-white rounded-full cursor-pointer md:hidden bottom-20 hover:text-orange-400">
 						<FaPlus className="rotate-45" onClick={openNav} size={36} />
 					</div>
 				</ul>
 
-				<button className="border hover:text-orange-400 border-white py-2 px-8 rounded-full font-semibold">
+				<button className="px-8 py-2 font-semibold border border-white rounded-full hover:text-orange-400">
 					Join Telegram
 				</button>
 			</div>
